@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Encriptador Alura</title>
+
+    <link rel="shotcut icon" href="/resources/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...<omitted for brevity>" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/resources/Logo.png" alt="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+
+
+    <div class="container">
+        <div class="encriptar">
+            <textarea name="texto" id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+        </div>
+
+        <div class="terminos">
+            <img src="resources/bi_exclamation-circle-fill.png">
+            <p>solo letras minusculas y sin acentos.</p>
+        </div>
+
+        <div class="buttons">
+            <input type="button" id="encriptar" value="Encriptar" class="btn-encrypt" onclick="encriptar()">
+            <input type="button" id="desencriptar" value="Desencriptar" class="btn-decrypt" onclick="desencriptar()">
+        </div>
+       
+        <div class="resultado">
+
+            <div class="mensaje-textoEncriptado" id="mensaje-TextoEncriptado">
+                <img src="resources/Muñeco.png" alt="mono" class="mono">
+                <h2 id="titulo-mensaje">Ningun Mensaje Encontrado</h2>
+                    <div id="salida-result" class="salida-result ocultar">
+                        <textarea name="mensaje" id="mensaje" readonly cols="30" rows="10" class="mensaje"></textarea>
+                        <button class="btnCopy">Copiar</button>
+                    </div>
+            </div>
+              
+        </div>
+    </div>
+
+   
+</body>
+
+<footer class="pie">
+   
+    <!-- <ul class="social-icons">
+       
+        <li><a href="https://www.instagram.com/your-profile-or-page" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/your-profile-or-page" target="_blank"><i class="fab fa-twitter"></i></a></li>
+         <div>
+        <a href="https://www.linkedin.com/in//" target="__blank"><i class="fa-linkedin" id="linkLinkedin"></i></a>
+        
+    </div>
+      </ul> -->
+
+      <p>Diseño Realizado Por Carlos Chávez Para Curso Alura / Oracle</p>
+      <ul class="iconos">
+        <a href="https://www.linkedin.com/in/tu-perfil-de-linkedin/" target="_blank">
+            <img class="linked" src="resources/linkedin.png" alt="Icono de LinkedIn">
+          </a>
+   </ul>
+</footer>
+<script src="index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
